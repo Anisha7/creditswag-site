@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './styles.css';
+import logo from '../../../../assets/CreditSwagLogo.png';
+import logoText from '../../../../assets/LogoText.png';
 
 class Navbar extends Component {
     render() {
         return (
         <div className="navbar">
             <ul>
-                <li><h1 className="title">Credit Swag</h1></li>   
+                <li> <img src={ logo } className="logo" alt="logo" /> </li>
+                <li>
+                    <img src={ logoText } className="logoText" alt="Credit Swag" />
+                    {/* <h1 className="title">Credit Swag</h1> */}
+                </li>   
             </ul>
             
             <ul>
