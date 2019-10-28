@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
 import '../../commonStyles.css'
+import HomeWrapper from '../HomeWrapper';
 
 class Home extends Component {
     render() {
-        return (<div>HELLO WORLD</div>)
+        return (
+            <HomeWrapper>
+                <div>HELLO WORLD</div>
+            </HomeWrapper>)
     }
 }
 
