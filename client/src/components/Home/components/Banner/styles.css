@@ -53,6 +53,35 @@
     border-radius: 40px;
 }
 
+/* ipads */
+@media only screen and (max-width: 1024px) {
+    .banner {
+        padding: 40px 60px 10px;
+        height: 600px;
+    }
+
+    .banner h1 {
+        font-size: 70px;
+    }
+
+    .banner h2 {
+        font-size: 40px;
+    }
+
+    .banner img {
+        width: 300px;
+        margin-top: 10px;
+        
+    }
+
+    .banner button {
+        font-size: 18px;
+        padding: 10px 20px;
+    }
+}
+
+
+/* mobile */
 @media only screen and (max-width: 950px) {
     .slogan {
         display: none;
