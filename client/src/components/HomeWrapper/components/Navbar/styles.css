@@ -55,16 +55,41 @@
 }
 
 .navbar .waitlistButton {
-    border: 1px solid #F8F3FC;;
+    border: 1px solid #F8F3FC;
     border-radius: 50px;
 }
 
-  @media (max-width: 1024px) {
-    /* TODO: change title size
-    // TODO: change nav organization to vertical instead of horizontal
+.barIcon {
+    display: none;
+}
+
+.barIcon path {
+    color: #F8F3FC;
+}
+
+@media (max-width: 950px) {
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .navbar .logo {
+        height: 20px;
+        padding-right: 0;
+    }
     
-    // FUTURE TODO: 
-        // Show hamburger button (checkbox type) and hide content
-        // IF CLICKED: show X button and content
-        // IF X is clicked: uncheck hamburger (checkbox type) and hide content */
+    .navbar .logoText {
+        height: 12px;
+    }
+    .options li:nth-child(-n+3){
+        display: none;
+    }
+
+    .barIcon {
+        display: unset;
+        cursor: pointer;
+    }
+    
+    .navbar > ul {
+        padding-left: 0;
+    }
 }
