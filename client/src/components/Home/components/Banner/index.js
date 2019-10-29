@@ -14,7 +14,7 @@ class Banner extends Component {
                         </div>
                         <img src={ phones } alt="Credit swag screenshots" />
                     </div>
-                    <img className="curve" src={ curve } alt="style curve" />
+                    {/* <img className="curve" src={ curve } alt="style curve" /> */}
                 </div>)
     }
 }

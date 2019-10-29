@@ -5,3 +5,8 @@
     font-family: 'Lato', sans-serif;
     color: #242121;
 }
+
+:root {
+    --ipad-size: 1350px;
+    --mob-size: 950px;
+}
