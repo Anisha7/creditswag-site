@@ -1,0 +1,43 @@
+@import '../../../../commonStyles.css';
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
+    padding: 40px 100px 10px;
+}
+
+
+.banner h1 {
+    font-size: 100px;
+    color: #F8F3FC;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 50px;
+    color: #D9D9DE;
+    margin: 0;
+    margin-bottom: 1.5em;
+}
+
+.banner img {
+    width: 45em;
+}
+
+.banner button {
+    font-family: Avenir;
+    font-size: 22px;
+    line-height: 44px;
+    letter-spacing: 1.45455px;
+
+    color: #2B2B39;
+    font-weight: bolder;
+
+    padding: 20px 40px;
+    border: none;
+    background: linear-gradient(177.04deg, #5863FC -95.96%, #FC5D9F 171.71%);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.875934);
+    border-radius: 40px;
+}
