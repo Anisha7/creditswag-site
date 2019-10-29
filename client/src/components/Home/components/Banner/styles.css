@@ -61,11 +61,22 @@
     .banner {
         padding: 10px 0px 10px 20px;
         height: 500px;
+        align-items: center;
+        justify-content: center;
     }
 
     .banner img {
-        width: 20em;
+        width: 300px;
         margin-top: 10px;
+        align-self: center;
+        justify-self: center;
         
+    }
+}
+
+/* iphone 5 */
+@media only screen and (max-width: 350px) {
+    .banner img {
+        width: 250px;
     }
 }
