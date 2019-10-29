@@ -8,6 +8,7 @@ class Home extends Component {
         return (
             <HomeWrapper>
                 <Banner />
+                <div> hello world</div>
             </HomeWrapper>)
     }
 }

@@ -4,6 +4,11 @@
     background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
 }
 
+.bannerBg .curve {
+    position: relative;
+    top: 10px;
+}
+
 .banner {
     display: flex;
     align-items: center;
@@ -26,7 +31,9 @@
 }
 
 .banner img {
-    width: 45em;
+    width: 40em;
+    margin-top: 20px;
+    
 }
 
 .banner button {
