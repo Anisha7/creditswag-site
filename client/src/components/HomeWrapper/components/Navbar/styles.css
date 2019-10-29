@@ -50,6 +50,15 @@
     height: 18px;
 }
 
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar .waitlistButton {
+    border: 1px solid white;
+    border-radius: 50px;
+}
+
   @media (max-width: 1024px) {
     /* TODO: change title size
     // TODO: change nav organization to vertical instead of horizontal

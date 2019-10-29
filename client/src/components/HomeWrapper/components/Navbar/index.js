@@ -16,10 +16,10 @@ class Navbar extends Component {
             </ul>
             
             <ul>
-                <li><a href="#item1">item1</a></li>
-                <li><a href="#item2">item2</a></li>
-                <li><a href="#item3">item3</a></li>
-                <li><a href="#item4">item4</a></li>
+                {/* TODO: replace to use redirect when routes are implemented */}
+                <li><a href="#item2">About us</a></li>
+                <li><a href="#item3">Our story</a></li>
+                <li className="waitlistButton"><a href="#item4">Join the waitlist</a></li>
             </ul>
         </div>)
     }
