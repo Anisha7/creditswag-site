@@ -1,10 +1,13 @@
 @import '../../../../commonStyles.css';
 
+.bannerBg {
+    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
+}
+
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
     padding: 40px 100px 10px;
 }
 
