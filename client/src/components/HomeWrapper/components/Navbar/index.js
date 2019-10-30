@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import { withRouter } from 'react-router-dom';
 import './styles.css';
 import logo from '../../../../assets/CreditSwagLogo.png';
 import logoText from '../../../../assets/LogoText.png';
@@ -44,4 +43,4 @@ class Navbar extends Component {
     }
 }
 
-export default withRouter(Navbar);
+export default Navbar;
