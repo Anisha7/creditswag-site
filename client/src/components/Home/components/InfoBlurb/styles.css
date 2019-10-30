@@ -20,3 +20,18 @@
 .infoblurb img {
     width: 80vw;
 }
+
+@media (max-width: 950px) {
+    .infoblurb {
+        padding: 0 40px;
+    }
+
+    .infoblurb h1 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+    
+    .infoblurb p {
+        font-size: 18px;
+    }
+}
