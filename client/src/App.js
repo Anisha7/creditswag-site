@@ -25,9 +25,6 @@ class App extends Component {
                   <Route exact path="/home">
                     <Home />
                   </Route>
-                  {/* <Route path="/menu">
-                    <MobileMenu />
-                  </Route> */}
                   {/* <Route path="/aboutus">
                     <AboutUs />
                   </Route>

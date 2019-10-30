@@ -67,6 +67,12 @@
     color: #F8F3FC;
 }
 
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 40px 20px 10px;
+    }
+}
+
 @media (max-width: 950px) {
     .navbar {
         padding: 10px 20px;
