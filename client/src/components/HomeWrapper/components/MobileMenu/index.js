@@ -2,44 +2,21 @@
 // mobile only
 
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
 import './styles.css';
 import logo from '../../../../assets/CreditSwagLogo.png';
 import logoText from '../../../../assets/LogoText.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 class MobileMenu extends Component {
-    constructor(props) {
-        super(props);
-        this.state = { 
-            width: 0, 
-            height: 0,
-         };
-        this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
-    }
-      
-    componentDidMount() {
-        this.updateWindowDimensions();
-        window.addEventListener('resize', this.updateWindowDimensions);
-    }
-      
-    componentWillUnmount() {
-        window.removeEventListener('resize', this.updateWindowDimensions);
-    }
-      
-    updateWindowDimensions() {
-        this.setState({ width: window.innerWidth, height: window.innerHeight });
-    }
 
     render() {
-        if ( this.state.width > 950 ) {
-            return <Redirect to={this.props.path} />
-        }
 
         return (
         <div className="mobileMenu">
             {/* TODO: Add a close button to redirect to current page */}
-            <p onClick={ ()=>this.props.closeMobileMenu()}>closeee</p>
-            <ul>
+            <p onClick={ ()=>this.props.closeMobileMenu()}><FontAwesomeIcon className="closeIcon" icon={ faTimes } size="2x" /></p>
+            <ul className="heading">
                 <li> <img src={ logo } className="logo" alt="logo" /> </li>
                 <li>
                     <img src={ logoText } className="logoText" alt="Credit Swag" />

@@ -1,0 +1,53 @@
+.mobileMenu {
+    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
+    height: 100em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobileMenu p {
+    margin-top: 0;
+    color: #F8F3FC;
+    padding: 10px 20px;
+    align-self: flex-start;
+}
+
+.mobileMenu p path {
+    color: #F8F3FC;
+}
+
+.mobileMenu > ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileMenu > .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+}
+
+.mobileMenu .logo {
+    height: 24px;
+    padding-bottom: 20px;
+}
+
+.mobileMenu .logoText {
+    height: 18px;
+}
+
+.mobileMenu a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    font-weight: 600;
+    color: #F8F3FC;
+}
+
+.mobileMenu a:hover {
+    text-decoration: underline;
+}
