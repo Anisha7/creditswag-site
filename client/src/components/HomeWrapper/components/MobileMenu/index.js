@@ -2,7 +2,7 @@
 // mobile only
 
 import React, { Component } from 'react';
-import { Redirect, Route } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import './styles.css';
 import logo from '../../../../assets/CreditSwagLogo.png';
 import logoText from '../../../../assets/LogoText.png';

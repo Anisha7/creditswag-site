@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import phones from '../../../../assets/Phones.png';
-import curve from '../../../../assets/bottomCurve.png';
 import './styles.css';
 
 class Banner extends Component {
@@ -14,7 +13,6 @@ class Banner extends Component {
                         </div>
                         <img src={ phones } alt="Credit swag screenshots" />
                     </div>
-                    {/* <img className="curve" src={ curve } alt="style curve" /> */}
                     {/* TODO: Add slogan here to display only on mobile size */}
                 </div>)
     }
