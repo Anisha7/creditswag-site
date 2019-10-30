@@ -10,8 +10,10 @@ class Home extends Component {
             <HomeWrapper>
                 <Banner />
                 <div className="mobile-slogan">
-                    <h1>Save $$.</h1>
-                    <h2>Dumb simple.</h2>
+                    <div className="mobile-slogan-heading">
+                        <h1>Save $$.</h1>
+                        <h2>Dumb simple.</h2>
+                    </div>
                     <button>JOIN THE WAITLIST</button>
                 </div>
                 <InfoBlurb />
