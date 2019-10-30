@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles.css'
 import HomeWrapper from '../HomeWrapper';
 import Banner from './components/Banner'
+import InfoBlurb from './components/InfoBlurb';
 
 class Home extends Component {
     render() {
@@ -13,6 +14,7 @@ class Home extends Component {
                     <h2>Dumb simple.</h2>
                     <button>JOIN THE WAITLIST</button>
                 </div>
+                <InfoBlurb />
             </HomeWrapper>)
     }
 }

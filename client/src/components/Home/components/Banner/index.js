@@ -13,7 +13,6 @@ class Banner extends Component {
                         </div>
                         <img src={ phones } alt="Credit swag screenshots" />
                     </div>
-                    {/* TODO: Add slogan here to display only on mobile size */}
                 </div>)
     }
 }
