@@ -15,6 +15,7 @@ class Banner extends Component {
                         <img src={ phones } alt="Credit swag screenshots" />
                     </div>
                     {/* <img className="curve" src={ curve } alt="style curve" /> */}
+                    {/* TODO: Add slogan here to display only on mobile size */}
                 </div>)
     }
 }
