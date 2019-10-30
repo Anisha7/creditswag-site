@@ -1,4 +1,22 @@
 
 .infoblurb {
     background: #f2f2f2;
+    padding: 10px 100px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoblurb h1 {
+    margin-top: 0;
+    font-size: 60px;
+    color: #393948;
+}
+
+.infoblurb p {
+    font-size: 24px;
+}
+
+.infoblurb img {
+    width: 80vw;
 }
