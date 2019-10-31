@@ -71,7 +71,7 @@
     cursor: pointer;
 }
 
-.options > li :not(:last-child) {
+.options li {
     cursor: pointer;
 }
 
