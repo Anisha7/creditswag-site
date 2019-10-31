@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 import MobileMenu from './components/MobileMenu';
 
 class Wrapper extends Component {
@@ -37,7 +38,7 @@ class Wrapper extends Component {
         return (<div>
             <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
             { this.props.children }
-            <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
+            <Footer openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
         </div>)
     }
 }

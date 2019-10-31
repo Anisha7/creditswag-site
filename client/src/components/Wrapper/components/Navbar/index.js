@@ -23,9 +23,13 @@ class Navbar extends Component {
         if (this.state.home) {
             return <Redirect to="/" />
         }
+        let bgcolor = "navbg"
+        if (this.props.nobgcolor) {
+            bgcolor = ""
+        }
 
         return (
-        <div className="navbar">
+        <div className={`navbar ${ bgcolor }`}>
             <ul onClick={ () => this.setState({ home : true }) } className="main-logo" >
                 <li> <img src={ logo } className="logo" alt="logo" /> </li>
                 <li>
