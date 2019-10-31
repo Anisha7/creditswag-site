@@ -94,7 +94,7 @@
     .navbar .logoText {
         height: 12px;
     }
-    .navbar .options li:nth-child(-n+3){
+    .navbar .options li:nth-child(-n+2){
         display: none;
     }
 

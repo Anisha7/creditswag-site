@@ -51,6 +51,7 @@
     .aboutUs {
         padding: 0 40px;
         flex-direction: column;
+        height: 1100px;
     }
 
     .aboutUs h1 {
