@@ -9,7 +9,7 @@ class Footer extends Component {
         return (
         <div className="footer">
             <Navbar nobgcolor={ true } openMobileMenu={ this.props.openMobileMenu } />
-            {/* TODO: add copyright text */}
+            <p>@Copyright CreditSwag, Inc. All rights reserved.</p>
         </div>)
     }
 }
