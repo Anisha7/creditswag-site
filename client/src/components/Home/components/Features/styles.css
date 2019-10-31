@@ -1,7 +1,7 @@
 @import '../../../../commonStyles.css';
 
 .features {
-    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
+    background: #1E1E28;
     margin-top: -2px;
 
 }
