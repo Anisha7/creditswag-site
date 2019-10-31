@@ -44,8 +44,8 @@
 @media only screen and (max-width: 950px) {
     .singleFeature {
         flex-direction: column-reverse;
-        padding: 10px 0px 10px 20px;
-        margin-bottom: 40px;
+        padding: 10px 0px 10px 0px;
+        padding-bottom: 40px;
     }
 
     .singleFeature:nth-child(2n) {
@@ -54,6 +54,6 @@
 
 
     .singleFeature div {
-        text-align: center;
+        margin: 0;
     }
 }

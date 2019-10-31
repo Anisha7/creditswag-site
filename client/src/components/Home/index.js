@@ -4,6 +4,7 @@ import HomeWrapper from '../HomeWrapper';
 import Banner from './components/Banner'
 import InfoBlurb from './components/InfoBlurb';
 import Features from './components/Features';
+import Contact from './components/Contact';
 
 class Home extends Component {
     render() {
@@ -19,6 +20,7 @@ class Home extends Component {
                 </div>
                 <InfoBlurb />
                 <Features />
+                <Contact />
             </HomeWrapper>)
     }
 }

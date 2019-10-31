@@ -11,7 +11,7 @@ const SingleFeature = ({ title, description, image }) => {
                 <h1> { title } </h1>
                 <p> { description } </p>
             </div>
-            <img src={ image } alt="feature descriptive image" />
+            <img src={ image } alt="feature description" />
         </div>
         )
 }
@@ -21,13 +21,13 @@ class Features extends Component {
         return (<div className="features">
                     <SingleFeature title="Feature 1" 
                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices sed arcu lorem scelerisque dui netus. Rutrum condimentum a nisl ipsum mauris, netus lorem scelerisque adipiscing."
-                                   image= { graph } />
+                                   image={ graph } />
                     <SingleFeature title="Feature 2" 
                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices sed arcu lorem scelerisque dui netus. Rutrum condimentum a nisl ipsum mauris, netus lorem scelerisque adipiscing."
                                    image="" />
                     <SingleFeature title="Feature 3" 
                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices sed arcu lorem scelerisque dui netus. Rutrum condimentum a nisl ipsum mauris, netus lorem scelerisque adipiscing."
-                                   image= { streak } />
+                                   image={ streak } />
                 </div>)
     }
 }

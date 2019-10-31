@@ -1,0 +1,32 @@
+
+.contact {
+    background: url("./BlackTriangle.png") top right no-repeat, linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
+}
+
+.contact .form {
+    padding: 10% 0;
+    /* padding-bottom: 40px; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .form input, .contact .form button {
+    padding: 10px 20px;
+    font-family: Avenir;
+    font-size: 20px;
+    box-shadow: 0px 2px 4px rgba(130, 79, 146, 0.875934);
+}
+
+.contact .form input {
+    border: 1px solid rgb(130, 79, 146);
+    border-radius: 15px 0px 0px 15px;
+}
+
+.contact .form button {
+    border: 1px solid rgb(130, 79, 146);
+    background: linear-gradient(175.99deg, #5863FC -95.96%, #FC5D9F 171.71%);
+    border-radius: 0px 15px 15px 0px;
+    color: #F8F3FC;
+}
