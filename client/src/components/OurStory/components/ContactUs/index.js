@@ -4,33 +4,34 @@ import './styles.css';
 class ContactUs extends Component {
     render() {
         return (<div className="contactUs">
-                    <h1>About us</h1>
+                    <h1>Contact us</h1>
                     <div className="content">
                         {/* row 1 */}
-                        <div>
+                        <div className="row1"> 
                             <h2>Email</h2>
-                            <p>sup@creditswag.com</p>
-                            <h2>Phone</h2>
-                            <p>(888)-GET-RICH</p>
+                            <a href="mailto:sup@creditswag.com"><p>sup@creditswag.com</p></a>
                         </div>
+                        <div>
                         {/* row 2 */}
                             <h2>San Francisco</h2>
                             <h3>Engineering Team</h3>
-                            {/* TODO: Add link to google maps */}
-                            <p>555 Post Street </p>
-                            <p>California, 94115</p>
-                            <p>United States</p>
-                        <div>
+                            <a href="https://goo.gl/maps/N4kW8PYBU9KGXixU7">
+                                <p>555 Post Street <br />
+                                California, 94115<br />
+                                United States </p>
+                            </a>
 
                         </div>
+                        <div>
                         {/* row 3 */}
                             <h2>Los Angeles</h2>
                             <h3>Business Team</h3>
-                            {/* TODO: Add link to google maps */}
-                            <p>Makhtom Road </p>
-                            <p>California, 02450</p>
-                            <p>United States</p>
-                        <div>
+                            {/* TODO: UPDATE google maps link and UPDATE address */}
+                            <a href="https://goo.gl/maps/N4kW8PYBU9KGXixU7">
+                                <p>Makhtom Road <br />
+                                California, 02450<br />
+                                United States</p>
+                            </a>
 
                         </div>
                     </div>
