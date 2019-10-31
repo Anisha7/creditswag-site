@@ -37,6 +37,7 @@ class HomeWrapper extends Component {
         return (<div>
             <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
             { this.props.children }
+            <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
         </div>)
     }
 }
