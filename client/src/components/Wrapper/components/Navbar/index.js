@@ -11,6 +11,7 @@ class Navbar extends Component {
         super(props);
         this.state = {
             ourStory : false,
+            home: false,
         }
     }
 
@@ -19,9 +20,13 @@ class Navbar extends Component {
             return <Redirect to="/ourstory" />
         }
 
+        if (this.state.home) {
+            return <Redirect to="/" />
+        }
+
         return (
         <div className="navbar">
-            <ul>
+            <ul onClick={ () => this.setState({ home : true }) } className="main-logo" >
                 <li> <img src={ logo } className="logo" alt="logo" /> </li>
                 <li>
                     <img src={ logoText } className="logoText" alt="Credit Swag" />

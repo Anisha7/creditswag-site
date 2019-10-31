@@ -21,7 +21,7 @@ class MobileMenu extends Component {
 
     render() {
         if (this.state.home) {
-            return <Redirect to="/home" />
+            return <Redirect to="/" />
         }
 
         if (this.state.aboutUs) {
