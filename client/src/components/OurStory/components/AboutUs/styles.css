@@ -39,3 +39,31 @@
     letter-spacing: 0.025em;
     color: #393948;
 }
+
+@media (max-width: 1024px) {
+    .aboutUs {
+        flex-direction: column;
+        height: 1400px;
+    }
+}
+
+@media (max-width: 950px) {
+    .aboutUs {
+        padding: 0 40px;
+        flex-direction: column;
+    }
+
+    .aboutUs h1 {
+        padding-top: 100px;
+        font-size: 30px;
+    }
+
+    .aboutUs h2, .aboutUs p {
+        font-size: 20px;
+    }
+
+    .aboutUs img {
+        position: relative;
+        top: -60px;
+    }
+}
