@@ -1,6 +1,6 @@
 
 .infoblurb {
-    background: #f2f2f2;
+    background: url("./blackBottomCurve.png") bottom right no-repeat, linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
     padding: 10px 100px 10px;
     display: flex;
     flex-direction: column;
@@ -19,6 +19,7 @@
 
 .infoblurb img {
     width: 80vw;
+    margin-bottom: 200px;
 }
 
 @media (max-width: 950px) {
@@ -34,4 +35,10 @@
     .infoblurb p {
         font-size: 18px;
     }
+
+    .infoblurb img {
+        width: 80vw;
+        margin-bottom: 100px;
+    }
+    
 }
