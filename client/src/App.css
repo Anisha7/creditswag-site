@@ -27,6 +27,10 @@ html, body, .App, .App-header, .App-intro>div {
   height: 100%
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
 #root {
   height: 100%
 }
