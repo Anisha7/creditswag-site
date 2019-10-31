@@ -3,6 +3,7 @@ import './styles.css'
 import HomeWrapper from '../HomeWrapper';
 import Banner from './components/Banner'
 import InfoBlurb from './components/InfoBlurb';
+import Features from './components/Features';
 
 class Home extends Component {
     render() {
@@ -17,6 +18,7 @@ class Home extends Component {
                     <button>JOIN THE WAITLIST</button>
                 </div>
                 <InfoBlurb />
+                <Features />
             </HomeWrapper>)
     }
 }

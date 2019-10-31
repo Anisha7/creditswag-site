@@ -1,0 +1,59 @@
+@import '../../../../commonStyles.css';
+
+.features {
+    background: linear-gradient(180deg, #303040 0%, #1E1E28 100%);
+    /* background: url("./images/bottomCurve.png") bottom right no-repeat, linear-gradient(180deg, #303040 0%, #1E1E28 100%); */
+
+}
+
+.singleFeature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px 10px;
+}
+
+.singleFeature:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+.singleFeature img {
+    margin: 0 20px;
+    height: 200px;
+}
+
+.singleFeature div {
+    margin: 0 20px;
+    width: 60%;
+}
+
+.singleFeature h1 {
+    margin-bottom: 30px;
+}
+
+.singleFeature p {
+    line-height: 26px;
+}
+
+.singleFeature h1, .singleFeature p {
+    color: #f2f2f2;
+}
+
+/* mobile */
+@media only screen and (max-width: 950px) {
+    .singleFeature {
+        flex-direction: column-reverse;
+        padding: 10px 0px 10px 20px;
+        margin-bottom: 40px;
+    }
+
+    .singleFeature:nth-child(2n) {
+        flex-direction: column-reverse;
+    }
+
+
+    .singleFeature div {
+        text-align: center;
+    }
+}
