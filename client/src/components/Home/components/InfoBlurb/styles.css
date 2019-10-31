@@ -1,7 +1,9 @@
+.infoblurb-wrapper {
+    background: url("./bottomCurve.png") bottom right no-repeat, linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
+    /* padding: 10px 100px 10px; */
+}
 
 .infoblurb {
-    background: url("./blackBottomCurve.svg") bottom right no-repeat, linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
-    padding: 10px 100px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,14 +22,14 @@
 }
 
 .infoblurb img {
-    width: 80vw;
-    margin-bottom: 200px;
+    width: 60vw;
+    margin-bottom: 300px;
 }
 
 @media (max-width: 950px) {
     .infoblurb {
         padding: 0 40px;
-        width: 80%;
+        /* width: 80%; */
     }
 
     .infoblurb h1 {

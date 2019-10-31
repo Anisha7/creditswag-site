@@ -3,7 +3,6 @@
 .features {
     background: #1E1E28;
     margin-top: -2px;
-
 }
 
 .singleFeature {
@@ -12,6 +11,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 40px 100px 10px;
+    width: 60%;
+    margin: AUTO;
 }
 
 .singleFeature:nth-child(2n) {
@@ -45,7 +46,8 @@
     .singleFeature {
         flex-direction: column-reverse;
         padding: 10px 0px 10px 0px;
-        padding-bottom: 40px;
+        padding-top: 40px;
+        width: 100%;
     }
 
     .singleFeature:nth-child(2n) {
