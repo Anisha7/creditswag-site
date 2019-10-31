@@ -1,0 +1,41 @@
+.aboutUs {
+    margin: 0;
+    background: url("./topcurve.svg") top left no-repeat, url("./bottomcurve.svg") bottom right no-repeat , linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
+    background-size: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: baseline;
+    height: 1100px;
+    padding: 0 120px 0;
+}
+
+.aboutUs h1 {
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 85px;
+    color: #393948;
+    text-decoration: underline;
+    padding-top: 180px;
+}
+
+.aboutUs h2 {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 189.5%;
+
+    letter-spacing: 0.035em;
+
+    color: #393948;
+}
+
+.aboutUs p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 189.5%;
+    letter-spacing: 0.025em;
+    color: #393948;
+}

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import './App.css';
 
 import Home from './components/Home';
-// import MobileMenu from './components/MobileMenu';
+import OurStory from './components/OurStory';
 
 import reducers from './reducers';
 const store = createStore(reducers)
@@ -25,11 +25,8 @@ class App extends Component {
                   <Route exact path="/home">
                     <Home />
                   </Route>
-                  {/* <Route path="/aboutus">
-                    <AboutUs />
-                  </Route>
                   <Route path="/ourstory">
-                    <OutStory />
+                    <OurStory />
                   </Route> */}
                 </Switch>
             </Router>
