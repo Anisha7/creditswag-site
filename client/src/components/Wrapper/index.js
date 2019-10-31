@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar';
 import MobileMenu from './components/MobileMenu';
 
-class HomeWrapper extends Component {
+class Wrapper extends Component {
     constructor(props) {
         super(props);
         this.state = { 
@@ -42,4 +42,4 @@ class HomeWrapper extends Component {
     }
 }
 
-export default HomeWrapper;
+export default Wrapper;
