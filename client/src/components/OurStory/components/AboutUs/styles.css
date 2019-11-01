@@ -1,5 +1,5 @@
 .aboutUs {
-    margin: 0;
+    margin: -2px;
     background: url("./topcurve.svg") top left no-repeat, url("./bottomcurve.svg") bottom right no-repeat , linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
     background-size: 100%;
     display: flex;
