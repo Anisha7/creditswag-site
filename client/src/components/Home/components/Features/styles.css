@@ -21,7 +21,7 @@
 
 .singleFeature img {
     margin: 0 20px;
-    height: 200px;
+    height: 180px;
 }
 
 .singleFeature div {
@@ -31,10 +31,11 @@
 
 .singleFeature h1 {
     margin-bottom: 30px;
+    font-size: 60px;
 }
 
 .singleFeature p {
-    line-height: 26px;
+    font-size: 24px;
 }
 
 .singleFeature h1, .singleFeature p {
@@ -57,5 +58,13 @@
 
     .singleFeature div {
         margin: 0;
+    }
+
+    .singleFeature h1 {
+        font-size: 30px;
+    }
+
+    .singleFeature p {
+        font-size: 18px;
     }
 }

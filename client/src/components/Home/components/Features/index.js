@@ -6,13 +6,13 @@ import graph from '../../../../assets/features/graphFeature.png';
 
 const SingleFeature = ({ title, description, image }) => {
     return (
-        <div className="singleFeature">
-            <div>
-                <h1> { title } </h1>
-                <p> { description } </p>
+            <div className="singleFeature">
+                <div>
+                    <h1> { title } </h1>
+                    <p> { description } </p>
+                </div>
+                <img src={ image } alt="feature description" />
             </div>
-            <img src={ image } alt="feature description" />
-        </div>
         )
 }
 
