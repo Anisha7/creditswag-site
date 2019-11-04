@@ -36,9 +36,9 @@ class Wrapper extends Component {
              }} />
         }
         return (<div>
-            <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
+            <Navbar openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} updateScrollToWaitlist={ this.props.updateScrollToWaitlist } /> 
             { this.props.children }
-            <Footer openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} /> 
+            <Footer openMobileMenu={() => this.setState({ mobileMenuIsOpen : true })} updateScrollToWaitlist={ this.props.updateScrollToWaitlist } /> 
         </div>)
     }
 }

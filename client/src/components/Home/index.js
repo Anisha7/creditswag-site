@@ -4,23 +4,34 @@ import Wrapper from '../Wrapper';
 import Banner from './components/Banner'
 import InfoBlurb from './components/InfoBlurb';
 import Features from './components/Features';
-import Contact from './components/Contact';
+import WaitlistForm from '../WaitlistForm';
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            scrollToWaitlist : false,
+        }
+    }
+
+    updateScrollToWaitlist() {
+        this.setState({ scrollToWaitlist: true })
+    }
+
     render() {
         return (
-            <Wrapper>
-                <Banner />
+            <Wrapper updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } >
+                <Banner updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
                 <div className="mobile-slogan">
                     <div className="mobile-slogan-heading">
                         <h1>Save $$.</h1>
                         <h2>Dumb simple.</h2>
                     </div>
-                    <button>JOIN THE WAITLIST</button>
+                    <button onClick={ () => this.updateScrollToWaitlist() }>JOIN THE WAITLIST</button>
                 </div>
                 <InfoBlurb />
                 <Features />
-                <Contact />
+                <WaitlistForm scroll={ this.state.scrollToWaitlist } updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
             </Wrapper>)
     }
 }

@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
 import './styles.css';
 
-class Contact extends Component {
+// join waitlist form
+class WaitlistForm extends Component {
+
     render() {
-        return (<div className="contact">
+        if ( this.props.scroll ) {
+            this.refs.waitlist.scrollIntoView({ behavior: "smooth" });
+        }
+        return (<div ref="waitlist" className="contact">
                     <div className="form">
                         <input type="email" placeholder="email" />
                         <button>JOIN THE WAITLIST</button>
@@ -12,4 +17,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default WaitlistForm;
