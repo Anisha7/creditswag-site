@@ -3,6 +3,7 @@ import './styles.css';
 
 import streak from '../../../../assets/features/Streak.svg';
 import graph from '../../../../assets/features/graphFeature.png';
+import notif from '../../../../assets/features/Notification.svg';
 
 const SingleFeature = ({ title, description, image }) => {
     return (
@@ -24,7 +25,7 @@ class Features extends Component {
                                    image={ graph } />
                     <SingleFeature title="Feature 2" 
                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices sed arcu lorem scelerisque dui netus. Rutrum condimentum a nisl ipsum mauris, netus lorem scelerisque adipiscing."
-                                   image="" />
+                                   image={ notif } />
                     <SingleFeature title="Feature 3" 
                                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices sed arcu lorem scelerisque dui netus. Rutrum condimentum a nisl ipsum mauris, netus lorem scelerisque adipiscing."
                                    image={ streak } />
