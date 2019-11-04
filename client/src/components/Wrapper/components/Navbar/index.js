@@ -27,7 +27,7 @@ class Navbar extends Component {
             
             <ul className="options">
                 <li><Link to="/ourstory">Our story</Link></li>
-                <li className="waitlistButton"><a href="#item4">Join the waitlist</a></li>
+                <li className="waitlistButton" ><a onClick={ () => this.props.updateScrollToWaitlist() } >Join the waitlist</a></li>
                 <li><a onClick={ () => this.props.openMobileMenu() }><FontAwesomeIcon className="barIcon" icon={ faBars } size="1x" /></a></li>
             </ul>
         </div>)

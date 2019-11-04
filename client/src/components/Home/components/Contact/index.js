@@ -8,7 +8,7 @@ class Contact extends Component {
         if ( this.props.scroll ) {
             console.log("scrolling now...")
             this.refs.waitlist.scrollIntoView();
-            this.props.updateScrollToWaitlist()
+            // this.props.updateScrollToWaitlist();
         }
     }
 

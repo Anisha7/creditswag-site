@@ -20,7 +20,7 @@ class Home extends Component {
 
     render() {
         return (
-            <Wrapper>
+            <Wrapper updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } >
                 <Banner updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
                 <div className="mobile-slogan">
                     <div className="mobile-slogan-heading">
