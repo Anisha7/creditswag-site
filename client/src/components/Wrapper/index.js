@@ -30,9 +30,10 @@ class Wrapper extends Component {
 
     render() {
         if ( this.state.width < 950 && this.state.mobileMenuIsOpen) {
-            return <MobileMenu closeMobileMenu={() => { 
-                this.setState({ mobileMenuIsOpen : false })
-                console.log(this.state.openMobileMenu)
+            return <MobileMenu updateScrollToWaitlist={ this.props.updateScrollToWaitlist }
+                               closeMobileMenu={() => { 
+                                    this.setState({ mobileMenuIsOpen : false })
+                                    console.log(this.state.openMobileMenu)
              }} />
         }
         return (<div>

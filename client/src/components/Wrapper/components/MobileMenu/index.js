@@ -2,7 +2,7 @@
 // mobile only
 
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import './styles.css';
 import logo from '../../../../assets/CreditSwagLogo.png';
 import logoText from '../../../../assets/LogoText.png';
@@ -47,9 +47,12 @@ class MobileMenu extends Component {
             
             <ul className="options">
                 {/* TODO: replace to use redirect when routes are implemented */}
-                <li><a onClick={ () => this.setState({ aboutUs : true })}>About us</a></li>
-                <li><a onClick={ () => this.setState({ ourStory : true })}>Our story</a></li>
-                <li className="waitlistButton"><a href="#item4">Join the waitlist</a></li>
+                {/* <li><a onClick={ () => this.setState({ aboutUs : true })}>About us</a></li> */}
+                <li><a><Link to="/ourstory">Our story</Link></a></li>
+                <li className="waitlistButton"><a onClick={ () => {
+                        this.props.closeMobileMenu()
+                        // this.props.updateScrollToWaitlist() 
+                    }}>Join the waitlist</a></li>
                 {/* TODO: hamburger functionality --> redirect to currect page */}
             </ul>
         </div>)
