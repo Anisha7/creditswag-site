@@ -14,19 +14,29 @@ class WaitlistForm extends Component {
 
     sendEmail() {
         console.log("SENDING DATA...")
-        fetch("/", {
+        fetch("/waitlist", {
             method: 'post',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({ email : this.state.email })
-        }).then((response) => response.json())
-          .then((data) => {
-              console.log("STATUS: ", data.status)
-              if (!data.status) {
+            headers: {'Content-Type': 'application/json', 
+            'Accept': 'application/json'},
+            body: JSON.stringify( { email: this.state.email } )
+        }).then((response) => {
+            console.log(response)
+            response.json()
+            if (!response.ok) {
                 this.setState({ error : true });
               } else {
                   this.setState({ success : true });
               }
-            })
+        })
+        //   .then((data) => {
+        //       console.log("DATA: ", data)
+        //       console.log("STATUS: ", data.status)
+        //       if (!data.status) {
+        //         this.setState({ error : true });
+        //       } else {
+        //           this.setState({ success : true });
+        //       }
+        //     })
           .catch((err) => {
               console.log(err)
               this.setState({ error : true });

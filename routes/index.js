@@ -13,10 +13,11 @@ const FROM_EMAIL = process.env.FROM_EMAIL
 const mandrill = require('mandrill-api/mandrill');
 const mandrill_client = new mandrill.Mandrill(MANDRILL_KEY);
 
-// Email Route
-router.post('/', (req, res) => {
-  const { email } = req.body;
 
+// Email Route
+router.post('/waitlist', (req, res) => {
+  const { email } = req.body;
+  console.log("POSTING")
   // Validate Email
   if (!(email_validator.validate(email))) {
     console.log("FAILED :(")
@@ -24,26 +25,30 @@ router.post('/', (req, res) => {
     return
   }
 
+  console.log("Initializing data")
   // Mailchimp Post Body
   const data = {
     email_address: email,
     status: 'subscribed',
   };
 
+  console.log("OPTIONS")
   var options = {
     method: 'POST',
     url: 'https://' + MAILCHIMP_INT + '.api.mailchimp.com/3.0/lists/' + LIST_ID + '/members',
     headers: {
       Authorization: 'apikey ' + MAILCHIMP_KEY
     },
-    body: postData
+    body: data
   }
   
+  console.log("HERE THO BACKEND")
   request(options, function (error, response, body) {
     if (error) throw new Error(error);
     console.log(body);
   });
-
+  
+  console.log("MADE IT TO RES.JSON IN THE BACKEND")
   res.json({ status: true })
 
   // Send Email
