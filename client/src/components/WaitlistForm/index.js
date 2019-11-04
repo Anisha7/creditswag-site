@@ -16,12 +16,11 @@ class WaitlistForm extends Component {
         console.log("SENDING DATA...")
         fetch("/waitlist", {
             method: 'post',
-            headers: {'Content-Type': 'application/json', 
-            'Accept': 'application/json'},
+            headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify( { email: this.state.email } )
         }).then((response) => {
             console.log(response)
-            response.json()
+            // response.json()
             if (!response.ok) {
                 this.setState({ error : true });
               } else {

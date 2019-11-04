@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
 var email_validator = require("email-validator");
 
 // APIs
@@ -17,7 +18,7 @@ const mandrill_client = new mandrill.Mandrill(MANDRILL_KEY);
 // Email Route
 router.post('/waitlist', (req, res) => {
   const { email } = req.body;
-  console.log("POSTING")
+  console.log("POSTING: ", email)
   // Validate Email
   if (!(email_validator.validate(email))) {
     console.log("FAILED :(")
@@ -30,7 +31,12 @@ router.post('/waitlist', (req, res) => {
   const data = {
     email_address: email,
     status: 'subscribed',
+    merge_fields: {
+      FNAME: ' '
+    }
   };
+
+  const postData = JSON.stringify(data);
 
   console.log("OPTIONS")
   var options = {
@@ -39,11 +45,12 @@ router.post('/waitlist', (req, res) => {
     headers: {
       Authorization: 'apikey ' + MAILCHIMP_KEY
     },
-    body: data
+    body: postData
   }
   
   console.log("HERE THO BACKEND")
   request(options, function (error, response, body) {
+    // console.log(error, response, body)
     if (error) throw new Error(error);
     console.log(body);
   });
