@@ -16,7 +16,7 @@ class WaitlistForm extends Component {
         fetch("/", {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify(this.state.email)
+            body: JSON.stringify({ email : this.state.email })
         }).then((response) => response.json())
           .then((data) => {
               console.log("STATUS: ", data.status)
@@ -41,7 +41,7 @@ class WaitlistForm extends Component {
         return (<div ref="waitlist" className="contact">
                     <div className="form">
                         <input onChange={ (e) => this.setState( { email: e.target.value })} type="email" placeholder="email" />
-                        <button >JOIN THE WAITLIST</button>
+                        <button onClick={ () => this.sendEmail() }>JOIN THE WAITLIST</button>
                     </div>
                 </div>)
     }
