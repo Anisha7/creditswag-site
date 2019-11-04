@@ -4,7 +4,7 @@ import Wrapper from '../Wrapper';
 import Banner from './components/Banner'
 import InfoBlurb from './components/InfoBlurb';
 import Features from './components/Features';
-import Contact from './components/Contact';
+import WaitlistForm from '../WaitlistForm';
 
 class Home extends Component {
     constructor(props) {
@@ -31,7 +31,7 @@ class Home extends Component {
                 </div>
                 <InfoBlurb />
                 <Features />
-                <Contact scroll={ this.state.scrollToWaitlist } updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
+                <WaitlistForm scroll={ this.state.scrollToWaitlist } updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
             </Wrapper>)
     }
 }

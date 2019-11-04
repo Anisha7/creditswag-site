@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './styles.css';
 
 // join waitlist form
-class Contact extends Component {
+class WaitlistForm extends Component {
 
     componentDidMount() {
         if ( this.props.scroll ) {
@@ -26,4 +26,4 @@ class Contact extends Component {
     }
 }
 
-export default Contact;
+export default WaitlistForm;
