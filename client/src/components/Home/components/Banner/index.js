@@ -9,7 +9,7 @@ class Banner extends Component {
                         <div className="slogan">
                             <h1>Save $$.</h1>
                             <h2>Dumb simple.</h2>
-                            <button>JOIN THE WAITLIST</button>
+                            <button onClick={ () => this.props.updateScrollToWaitlist() }>JOIN THE WAITLIST</button>
                         </div>
                         <img src={ phones } alt="Credit swag screenshots" />
                     </div>
