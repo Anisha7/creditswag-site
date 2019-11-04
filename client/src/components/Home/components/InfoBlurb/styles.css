@@ -28,8 +28,7 @@
 
 @media (max-width: 950px) {
     .infoblurb {
-        padding: 0 40px;
-        /* width: 80%; */
+        padding: 0;
     }
 
     .infoblurb h1 {
@@ -39,6 +38,7 @@
     
     .infoblurb p {
         font-size: 18px;
+        text-align: center;
     }
 
     .infoblurb img {

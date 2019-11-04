@@ -67,4 +67,8 @@
     .singleFeature p {
         font-size: 18px;
     }
+
+    .singleFeature img {
+        max-width: 300px;
+    }
 }
