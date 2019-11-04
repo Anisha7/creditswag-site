@@ -15,7 +15,7 @@ class Home extends Component {
     }
 
     updateScrollToWaitlist() {
-        this.setState({ scrollToWaitlist: !this.state.scrollToWaitlist })
+        this.setState({ scrollToWaitlist: true })
     }
 
     render() {

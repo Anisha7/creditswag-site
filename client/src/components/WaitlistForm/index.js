@@ -4,18 +4,9 @@ import './styles.css';
 // join waitlist form
 class WaitlistForm extends Component {
 
-    componentDidMount() {
-        if ( this.props.scroll ) {
-            console.log("scrolling now...")
-            this.refs.waitlist.scrollIntoView();
-            // this.props.updateScrollToWaitlist();
-        }
-    }
-
     render() {
         if ( this.props.scroll ) {
-            console.log("scrolling now in render...")
-            this.refs.waitlist.scrollIntoView();
+            this.refs.waitlist.scrollIntoView({ behavior: "smooth" });
         }
         return (<div ref="waitlist" className="contact">
                     <div className="form">
