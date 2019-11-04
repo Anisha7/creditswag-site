@@ -19,6 +19,7 @@ const mandrill_client = new mandrill.Mandrill(MANDRILL_KEY);
 router.post('/waitlist', (req, res) => {
   const { email } = req.body;
   console.log("POSTING: ", email)
+
   // Validate Email
   if (!(email_validator.validate(email))) {
     console.log("FAILED :(")
@@ -41,6 +42,7 @@ router.post('/waitlist', (req, res) => {
   console.log("OPTIONS")
   var options = {
     method: 'POST',
+    // ``
     url: 'https://' + MAILCHIMP_INT + '.api.mailchimp.com/3.0/lists/' + LIST_ID + '/members',
     headers: {
       Authorization: 'apikey ' + MAILCHIMP_KEY
@@ -54,9 +56,6 @@ router.post('/waitlist', (req, res) => {
     if (error) throw new Error(error);
     console.log(body);
   });
-  
-  console.log("MADE IT TO RES.JSON IN THE BACKEND")
-  res.json({ status: true })
 
   // Send Email
   var template_name = "credit-waitlist"
@@ -85,6 +84,10 @@ router.post('/waitlist', (req, res) => {
     console.log('A mandrill error occurred: ' + e.name + ' - ' + e.message);
     // A mandrill error occurred: Unknown_Subaccount - No subaccount exists with the id 'customer-123'
   });
+
+  console.log("MADE IT TO RES.JSON IN THE BACKEND")
+  res.json({ status: true, message: 'Hello' })
+  
 });
 
 module.exports = router;

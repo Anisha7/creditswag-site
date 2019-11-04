@@ -20,22 +20,22 @@ class WaitlistForm extends Component {
             body: JSON.stringify( { email: this.state.email } )
         }).then((response) => {
             console.log(response)
-            // response.json()
-            if (!response.ok) {
+            response.json()
+            // if (!response.ok) {
+            //     this.setState({ error : true });
+            //   } else {
+            //       this.setState({ success : true });
+            //   }
+        })
+          .then((data) => {
+              console.log("DATA: ", data)
+              console.log("STATUS: ", data.status)
+              if (!data.status) {
                 this.setState({ error : true });
               } else {
                   this.setState({ success : true });
               }
-        })
-        //   .then((data) => {
-        //       console.log("DATA: ", data)
-        //       console.log("STATUS: ", data.status)
-        //       if (!data.status) {
-        //         this.setState({ error : true });
-        //       } else {
-        //           this.setState({ success : true });
-        //       }
-        //     })
+            })
           .catch((err) => {
               console.log(err)
               this.setState({ error : true });
