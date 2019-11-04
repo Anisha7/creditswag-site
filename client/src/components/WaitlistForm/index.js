@@ -8,6 +8,7 @@ class WaitlistForm extends Component {
         this.state = {
             email: '',
             error: false,
+            success: false,
         }
     }
 
@@ -22,6 +23,8 @@ class WaitlistForm extends Component {
               console.log("STATUS: ", data.status)
               if (!data.status) {
                 this.setState({ error : true });
+              } else {
+                  this.setState({ success : true });
               }
             })
           .catch((err) => {
@@ -33,7 +36,19 @@ class WaitlistForm extends Component {
 
     render() {
         // TODO: confirmation that email went through!
+        if ( this.state.success ) {
+            return (<div ref="waitlist" className="contact">
+                    <div className="form">
+                        <p className="successMessage">YAY! You're on the waitlist!</p>
+                        <button className="okButton" onClick={ () => this.setState({ success: false }) }> Ok! </button>
+                    </div>
+                </div>)
+        }
         // TODO: error message if it errored
+        let error = '';
+        if ( this.state.error ) {
+            error = <p className="error">Oops, our bad. Try again!</p>
+        }
 
         if ( this.props.scroll ) {
             this.refs.waitlist.scrollIntoView({ behavior: "smooth" });
@@ -43,6 +58,7 @@ class WaitlistForm extends Component {
                         <input onChange={ (e) => this.setState( { email: e.target.value })} type="email" placeholder="email" />
                         <button onClick={ () => this.sendEmail() }>JOIN THE WAITLIST</button>
                     </div>
+                    { error }
                 </div>)
     }
 }
