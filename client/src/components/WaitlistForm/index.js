@@ -18,23 +18,23 @@ class WaitlistForm extends Component {
             method: 'post',
             headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
             body: JSON.stringify( { email: this.state.email } )
-        }).then((response) => {
-            response.json()
-            if (!response.ok) {
+        }).then(async (response) => {
+            const data = await response.json()
+            if (!response.ok || data.error || !data.status) {
                 this.setState({ error : true });
               } else {
                   this.setState({ success : true });
               }
         })
           .catch((err) => {
-              console.log(err)
+            //   console.log(err)
               this.setState({ error : true });
           })
         
     }
 
     render() {
-        // TODO: confirmation that email went through!
+        // confirmation that email went through!
         if ( this.state.success ) {
             return (<div ref="waitlist" className="contact">
                     <div className="form">
@@ -43,7 +43,7 @@ class WaitlistForm extends Component {
                     </div>
                 </div>)
         }
-        // TODO: error message if it errored
+        // error message if it errored
         let error = '';
         if ( this.state.error ) {
             error = <p className="error">Oops, our bad. Try again!</p>

@@ -21,9 +21,7 @@ router.post("/waitlist", (req, res) => {
     console.log("POSTING: ", email);
     // Validate Email
     if (!email_validator.validate(email)) {
-      console.log("FAILED :(");
-      res.json({ status: false });
-      return;
+      throw "Bad request"
     }
 
     console.log("Initializing data");
@@ -123,7 +121,7 @@ router.post("/waitlist", (req, res) => {
     );
   } catch (error) {
     console.log("THERE HAS BEEN AN ERROR:", error);
-    res.json({ error });
+    throw error
   }
 });
 
