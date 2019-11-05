@@ -39,7 +39,7 @@ class WaitlistForm extends Component {
             return (<div ref="waitlist" className="contact">
                     <div className="form">
                         <p className="successMessage">YAY! You're on the waitlist!</p>
-                        <button className="okButton" onClick={ () => this.setState({ success: false }) }> Ok! </button>
+                        <button className="okButton" onClick={ () => this.setState({ success: false, error: false }) }> Ok! </button>
                     </div>
                 </div>)
         }
