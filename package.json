@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "devstart": "(node ./bin/www) & (cd client && npm run start)",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install -f && npm run build",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "start": "node ./bin/www"
   },
   "proxy": "http://localhost:9000",
@@ -17,7 +17,6 @@
     "dotenv": "^8.1.0",
     "email-validator": "^2.0.4",
     "express": "^4.16.4",
-    "fsevents": "^2.1.1",
     "helmet": "^3.21.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
@@ -26,6 +25,7 @@
     "request": "^2.88.0"
   },
   "devDependencies": {
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^3.2.0",
+    "fsevents": "^2.1.1"
   }
 }
