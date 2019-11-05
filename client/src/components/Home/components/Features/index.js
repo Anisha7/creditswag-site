@@ -3,7 +3,7 @@ import './styles.css';
 
 import streak from '../../../../assets/features/Streak.svg';
 import graph from '../../../../assets/features/graphFeature.png';
-import notif from '../../../../assets/features/Notification.svg';
+import notif from '../../../../assets/features/Notification.png';
 
 const SingleFeature = ({ title, description, image }) => {
     return (
