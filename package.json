@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "devstart": "(node ./bin/www) & (cd client && npm run start)",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm install fsevents && npm run build",
     "start": "node ./bin/www"
   },
   "proxy": "http://localhost:9000",
