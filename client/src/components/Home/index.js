@@ -25,7 +25,7 @@ class Home extends Component {
                 <div className="mobile-slogan">
                     <div className="mobile-slogan-heading">
                         <h1>Save $$.</h1>
-                        <h2>Dumb simple.</h2>
+                        <h2>dumb simple</h2>
                     </div>
                     <button onClick={ () => this.updateScrollToWaitlist() }>JOIN THE WAITLIST</button>
                 </div>
