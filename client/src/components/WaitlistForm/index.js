@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './styles.css';
 
+import * as smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
 // join waitlist form
 class WaitlistForm extends Component {
     constructor(props) {
