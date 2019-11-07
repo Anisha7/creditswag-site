@@ -7,10 +7,7 @@ class InfoBlurb extends Component {
         return (<div className="infoblurb-wrapper">
                     <div className="infoblurb">
                         <h1>Reach your goals.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Tempor enim libero amet, eu volutpat. Iaculis sit lacus id volutpat. 
-                            Suspendisse in facilisis hendrerit cras nunc. Aliquam magna malesuada 
-                            quisque vulputate ac, lorem consequat gravida ipsum.</p>
+                        <p>Our mission is to make financing accessible and approachable for college students. Students are struggling to manage their money and have no incentive to learn about financial literacy. Our solution is an app that incentivizes them to make smarter financial decisions on a daily basis by teaching them money management as they spend.</p>
                         <img src={ illustration } alt="illustration" />
                     </div>
                 </div>)

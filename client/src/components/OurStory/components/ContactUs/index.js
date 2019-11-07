@@ -9,7 +9,7 @@ class ContactUs extends Component {
                         {/* row 1 */}
                         <div className="row1"> 
                             <h2>Email</h2>
-                            <a href="mailto:sup@creditswag.com"><p>sup@creditswag.com</p></a>
+                            <a href="mailto:customerservice@conquercredit.com"><p>customerservice@conquercredit.com</p></a>
                         </div>
                         <div>
                         {/* row 2 */}
