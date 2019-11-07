@@ -8,10 +8,11 @@ class AboutUs extends Component {
                     <div>
                         <h1>About us</h1>
                         <h2>Built by students, for students</h2>
-                        <p>Conquer Credit Management has served thousands of 
+                        {/* Conquer Credit Management has served thousands of 
                             clients enabling and educating them on the importance 
-                            of credit. After years of witnessing students struggle 
-                            with money management, Angela Setters, CEO, an app to 
+                            of credit.  */}
+                        <p>After years of witnessing students struggle 
+                            with money management, Angela Setters envisioned an app to 
                             help students learn about financial literacy in an easy, 
                             engaging process. She enlisted the help of student developers 
                             at Make School to accomplish her mission.</p>

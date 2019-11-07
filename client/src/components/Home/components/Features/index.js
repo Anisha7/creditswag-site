@@ -26,7 +26,7 @@ class Features extends Component {
                                    We allow you to track your balance every day! We offer a visual representation 
                                    of how your money is fluctuating."
                                    image={ graph } />
-                    <SingleFeature title="Feature 2" 
+                    <SingleFeature title="Notifications" 
                                    description="The Credit Swag sends helpful notifications as users spend money helping them
                                    make better decisions."
                                    image={ notif } />

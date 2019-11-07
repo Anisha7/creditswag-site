@@ -73,4 +73,9 @@
         position: relative;
         top: -60px;
     }
+
+    .email {
+        margin-left: -43px;
+        float: left;
+    }
 }
