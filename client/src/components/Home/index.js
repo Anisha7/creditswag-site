@@ -24,8 +24,8 @@ class Home extends Component {
                 <Banner updateScrollToWaitlist={ () => this.updateScrollToWaitlist() } />
                 <div className="mobile-slogan">
                     <div className="mobile-slogan-heading">
-                        <h1>Save $$.</h1>
-                        <h2>dumb simple</h2>
+                        <h1>Save $$</h1>
+                        <h2>money moves made simple</h2>
                     </div>
                     <button onClick={ () => this.updateScrollToWaitlist() }>JOIN THE WAITLIST</button>
                 </div>
