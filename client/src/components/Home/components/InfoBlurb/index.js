@@ -15,6 +15,16 @@ class InfoBlurb extends Component {
                             </p>
                         <img src={ illustration } alt="illustration" />
                     </div>
+
+                    <div className="infoblurb">
+                        {/* <h1>Reach your goals.</h1> */}
+                        <h1>Financial Insight for <i>all</i> ages!</h1>
+                        <p>Whether you’re just starting out or starting over, age is just a number and your money doesn’t
+                            care how old you are! Today more than ever your credit and money can dictate your future
+                            from how and where you live to your job and social status. Learning these simple but valuable
+                            financial tips can help shape your tomorrow and get you back on track before you know it.
+                            </p>
+                    </div>
                 </div>)
     }
 }

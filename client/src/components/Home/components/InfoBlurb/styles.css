@@ -1,6 +1,6 @@
 .infoblurb-wrapper {
     background: url("./bottomCurve.png") bottom right no-repeat, linear-gradient(180deg, #f2f2f2 0%, #f2f2f2 100%);
-    /* padding: 10px 100px 10px; */
+    padding-bottom: 300px;
 }
 
 .infoblurb {
@@ -23,10 +23,14 @@
 
 .infoblurb img {
     width: 60vw;
-    margin-bottom: 300px;
+    margin-bottom: 150px;
 }
 
 @media (max-width: 950px) {
+    .infoblurb-wrapper {
+        padding-bottom: 200px;
+    }
+
     .infoblurb {
         padding: 0;
         width: 80%
@@ -44,7 +48,7 @@
 
     .infoblurb img {
         width: 80vw;
-        margin-bottom: 100px;
+        margin-bottom: 70px;
     }
     
 }
