@@ -20,13 +20,12 @@
 .aboutUs h2 {
     font-family: Lato;
     font-style: normal;
-    font-weight: bold;
-    font-size: 26px;
+    font-weight: 900;
+    font-size: 28px;
     line-height: 189.5%;
 
     letter-spacing: 0.035em;
-
-    color: #393948;
+    color: #393939;;
 }
 
 .aboutUs p {
