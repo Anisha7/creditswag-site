@@ -25,8 +25,7 @@ class ContactUs extends Component {
                         {/* row 3 */}
                             <h2>Los Angeles</h2>
                             <h3>Business Team</h3>
-                            {/* TODO: UPDATE google maps link and UPDATE address */}
-                            <a href="https://goo.gl/maps/N4kW8PYBU9KGXixU7">
+                            <a href="https://goo.gl/maps/FFg457mv32bQe2ZM8">
                                 <p>23901 Calabasas Road #2064 <br />
                                 Calabasas, CA 91302<br />
                                 United States</p>
