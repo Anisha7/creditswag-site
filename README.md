@@ -1,5 +1,5 @@
 # creditswag-site
- Website for credit swag
+https://creditswag.herokuapp.com
 
 # Intructions
 1. Clone or download the repo
